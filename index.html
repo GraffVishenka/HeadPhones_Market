@@ -10,17 +10,29 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
- 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Shopper landing Page</title>
   </head>
   <body>
@@ -29,8 +41,8 @@
         <a class="nadpis" style="color: green"
           >Shop<span style="color: #000">per</span></a
         >
-        <input class="search" type="search" placeholder="Search items" />
-        <button class="lupa">
+        <input class="search" type="search" placeholder="Search items" id="5" />
+        <label class="lupa" for="5">
           <svg
             class="svg_lupa"
             xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +56,7 @@
               fill="white"
             />
           </svg>
-        </button>
+        </label>
         <button class="bag">
           <img class="ic" src="./svg/Shopping-bag.svg" />0 Items Added
         </button>
@@ -111,30 +123,31 @@
             src="./img/naushniki.png"
             alt="headphones"
           />
-        <div class="video-block">
-          <img class="zelenka" src="./svg/zelenka.svg"> 
+          <div class="video-block">
+            <img class="zelenka" src="./svg/zelenka.svg" />
             <img class="video_img" src="./img/image 11.png" alt="video" />
             <p class="play_video">Play Video</p>
           </div>
           <img class="star2" alt="star2" src="./svg/Star 2.svg" />
         </div>
-      </div>
       </section>
       <section class="info2">
         <div class="info2_left">
           <h2>Apple wireless Airpod</h2>
           <div class="image_position">
-          <div id="image_position1">
-            <img src="./img/price1.png"/>
-            </div> 
+            <div id="image_position1">
+              <img src="./img/price1.png" />
+            </div>
             <div id="image_position2">
-            <img src="./img/price2.png">
+              <img src="./img/price2.png" />
+            </div>
+            <div id="image_position3">
+              <img src="./img/price3.png" />
+            </div>
           </div>
-          <div id="image_position3">
-            <img src="./img/price3.png">
+          <div class="price6">
+            <p class="price5">Price: <span class="dollar">$45.99</span></p>
           </div>
-        </div>
-          <p class="price5">Price: <span class="dollar">$45.99</span></p>
         </div>
         <div class="info2_right">
           <h3>Our Featured Products</h3>
@@ -143,8 +156,10 @@
             used to demonstrate the visual form of a <br />
             product
           </p11>
-          <button class="custom_btn">Add to cart</button>
-          <button class="view">View more</button>
+          <div class="knopki">
+            <button class="custom_btn">Add to cart</button>
+            <button class="view">View more</button>
+          </div>
         </div>
       </section>
       <section class="info3">
@@ -155,10 +170,10 @@
         </div>
         <div class="boat">
           <div class="boat1">
-            
-             <img class="headphones2" src="./img/boat rockerz 333.png" />
-              <img class="zeleniy_krug" src="svg/zeleniy_krug.svg"/><p class="sale60">Save 60%</p>
-            
+            <img class="headphones2" src="./img/boat rockerz 333.png" />
+            <img class="zeleniy_krug" src="svg/zeleniy_krug.svg" />
+            <p class="sale60">Save 60%</p>
+
             <div class="boat_bot1">
               <p3>Boat Rockerz 333</p3>
               <div class="rating">
@@ -174,7 +189,7 @@
             <button class="adder">Add to cart</button>
           </div>
           <div class="boat2">
-              <img class="headphones1" src="./img/boat rockerz 234.png" />
+            <img class="headphones1" src="./img/boat rockerz 234.png" />
             <div class="boat_bot1">
               <p3>Boat Rockerz 234</p3>
               <div class="rating">
@@ -190,10 +205,10 @@
             <button class="adder">Add to cart</button>
           </div>
           <div class="boat3">
-            
-              <img class="headphones1" src="./img/boat rockerz 323.png" />
-              <img class="fioletoviy_krug" src="svg/fioletoviy_krug.svg"/><p class="sale40">Save 40%</p>
-            
+            <img class="headphones1" src="./img/boat rockerz 323.png" />
+            <img class="fioletoviy_krug" src="svg/fioletoviy_krug.svg" />
+            <p class="sale40">Save 40%</p>
+
             <div class="boat_bot1">
               <p3>Boat Rockerz 323</p3>
               <div class="rating">
@@ -208,80 +223,79 @@
             </div>
             <button class="adder">Add to cart</button>
           </div>
-          <img class="arrow" src="./svg/right arrow.svg"  />
+          <img class="arrow" src="./svg/right arrow.svg" />
         </div>
       </section>
       <section class="info4">
         <h8>Trending Earphones</h8>
         <div class="info4_bar">
-        <button class="active_dva" type="button">Earbuds</button>
-        <button class="active2">Wireless</button>
-        <button class="active2">Wired</button>
-      </div>
-      <div class="boat">
-        <div class="boat1">
-          
-           <img class="headphones3" src="./img/rockerz333.png" />
-            <img class="zeleniy_krug" src="svg/zeleniy_krug.svg"/><p class="sale60">Save 60%</p>
-          
-          <div class="boat_bot1">
-            <p3>Boat Rockerz 333</p3>
-            <div class="rating">
-              <img src="./icon/Star 3.svg" />
-              <img src="./icon/Star 3.svg" />
-              <img src="./icon/Star 3.svg" />
-              <img src="./icon/Star 3.svg" />
-              <img src="./icon/Star 3.svg" />
-              <p4>75 Reviews</p4>
-            </div>
-            <p5>$20</p5>
-          </div>
-          <button class="adder">Add to cart</button>
+          <button class="active_dva" type="button">Earbuds</button>
+          <button class="active2">Wireless</button>
+          <button class="active2">Wired</button>
         </div>
-        <div class="boat4">
+        <div class="boat">
+          <div class="boat1">
+            <img class="headphones3" src="./img/rockerz333.png" />
+            <img class="zeleniy_krug" src="svg/zeleniy_krug.svg" />
+            <p class="sale60">Save 60%</p>
+
+            <div class="boat_bot1">
+              <p3>Boat Rockerz 333</p3>
+              <div class="rating">
+                <img src="./icon/Star 3.svg" />
+                <img src="./icon/Star 3.svg" />
+                <img src="./icon/Star 3.svg" />
+                <img src="./icon/Star 3.svg" />
+                <img src="./icon/Star 3.svg" />
+                <p4>75 Reviews</p4>
+              </div>
+              <p5>$20</p5>
+            </div>
+            <button class="adder">Add to cart</button>
+          </div>
+          <div class="boat4">
             <img class="headphones1" src="./img/boat rockerz 234.png" />
-          <div class="boat_bot1">
-            <p3>Boat Rockerz 234</p3>
-            <div class="rating">
-              <img src="./icon/Star 3.svg" />
-              <img src="./icon/Star 3.svg" />
-              <img src="./icon/Star 3.svg" />
-              <img src="./icon/Star 3.svg" />
-              <img src="./icon/Star 3.svg" />
-              <p4>75 Reviews</p4>
+            <div class="boat_bot1">
+              <p3>Boat Rockerz 234</p3>
+              <div class="rating">
+                <img src="./icon/Star 3.svg" />
+                <img src="./icon/Star 3.svg" />
+                <img src="./icon/Star 3.svg" />
+                <img src="./icon/Star 3.svg" />
+                <img src="./icon/Star 3.svg" />
+                <p4>75 Reviews</p4>
+              </div>
+              <p5>$40</p5>
             </div>
-            <p5>$40</p5>
+            <button class="adder">Add to cart</button>
           </div>
-          <button class="adder">Add to cart</button>
-        </div>
-        <div class="boat5">
-          
+          <div class="boat5">
             <img class="headphones1" src="./img/rockerz323.png" />
-            <img class="fioletoviy_krug" src="svg/golyboi_krug.svg"/><p class="sale40">Save 40%</p>
-          
-          <div class="boat_bot1">
-            <p3>Boat Rockerz 323</p3>
-            <div class="rating">
-              <img src="./icon/Star 3.svg" />
-              <img src="./icon/Star 3.svg" />
-              <img src="./icon/Star 3.svg" />
-              <img src="./icon/Star 3.svg" />
-              <img src="./icon/Star 3.svg" />
-              <p4>75 Reviews</p4>
+            <img class="fioletoviy_krug" src="svg/golyboi_krug.svg" />
+            <p class="sale40">Save 40%</p>
+
+            <div class="boat_bot1">
+              <p3>Boat Rockerz 323</p3>
+              <div class="rating">
+                <img src="./icon/Star 3.svg" />
+                <img src="./icon/Star 3.svg" />
+                <img src="./icon/Star 3.svg" />
+                <img src="./icon/Star 3.svg" />
+                <img src="./icon/Star 3.svg" />
+                <p4>75 Reviews</p4>
+              </div>
+              <p5>$30</p5>
             </div>
-            <p5>$30</p5>
+            <button class="adder">Add to cart</button>
           </div>
-          <button class="adder">Add to cart</button>
+          <img class="arrow" src="./svg/right arrow.svg" />
         </div>
-        <img class="arrow" src="./svg/right arrow.svg"  />
-      </div>
-
-
       </section>
       <section class="info5">
         <div class="fon_h5"><h5>New Launches</h5></div>
         <div class="info5_left">
-          <img class="mini_krug" src="./svg/mini_krug.svg"><p class="mini_text">&lt;</p></img>
+          <img class="mini_krug" src="./svg/mini_krug.svg" />
+          <p class="mini_text">&lt;</p>
           <img class="ellipse-l" src="./img/info5_1.png" />
           <img class="ellipse" src="./img/info5_2.png" />
         </div>
@@ -294,10 +308,11 @@
           <p class="price6">Price: <span class="dollar1">$45.99</span></p>
           <img class="colors" src="./svg/colors.svg" />
           <div>
-          <button class="add_btn">Add to cart</button>
-          <button class="more">Explore More</button>
-        </div>
-          <img class="mini_krug_r" src="./svg/mini_krug.svg"><p class="mini_text_r">&gt;</p></img>
+            <button class="add_btn">Add to cart</button>
+            <button class="more">Explore More</button>
+          </div>
+          <img class="mini_krug_r" src="./svg/mini_krug.svg" />
+          <p class="mini_text_r">&gt;</p>
         </div>
       </section>
     </main>
@@ -307,48 +322,48 @@
         <button class="get_started">Get started</button>
       </div>
       <div class="stolby">
-      <div class="subscribe">
-        <p class="our"
-          >Subscribe to our <br />
-          Website</p
-        >
-        <input
-          class="search1"
-          type="search"
-          placeholder="Email address"
-          id="2"
-        />
-        <label for="2"><img class="submit" src="./svg/Submit.svg" /></label>
+        <div class="subscribe">
+          <p class="our">
+            Subscribe to our <br />
+            Website
+          </p>
+          <input
+            class="search1"
+            type="search"
+            placeholder="Email address"
+            id="2"
+          />
+          <label for="2"><img class="submit" src="./svg/Submit.svg" /></label>
+        </div>
+        <div class="footer-links1">
+          <div class="footer-header">Service</div>
+          <a class="footer-link" href="#">Email Marketings</a>
+          <a class="footer-link" href="#">Campaigns</a>
+          <a class="footer-link" href="#">Branding</a>
+          <a class="footer-link" href="#">Offline</a>
+        </div>
+        <div class="footer-links2">
+          <div class="footer-header">About</div>
+          <a class="footer-link" href="#">Our Story</a>
+          <a class="footer-link" href="#">Benefits</a>
+          <a class="footer-link" href="#">Team</a>
+          <a class="footer-link" href="#">Careers</a>
+        </div>
+        <div class="footer-links3">
+          <div class="footer-header">Help</div>
+          <a class="footer-link" href="#">FAQs</a>
+          <a class="footer-link" href="#">Сontact US</a>
+        </div>
       </div>
-      <div class="footer-links1">
-        <div class="footer-header">Service</div>
-        <a class="footer-link" href="#">Email Marketings</a>
-        <a class="footer-link" href="#">Campaigns</a>
-        <a class="footer-link" href="#">Branding</a>
-        <a class="footer-link" href="#">Offline</a>
-      </div>
-      <div class="footer-links2">
-        <div class="footer-header">About</div>
-        <a class="footer-link" href="#">Our Story</a>
-        <a class="footer-link" href="#">Benefits</a>
-        <a class="footer-link" href="#">Team</a>
-        <a class="footer-link" href="#">Careers</a>
-      </div>
-      <div class="footer-links3">
-        <div class="footer-header">Help</div>
-        <a class="footer-link" href="#">FAQs</a>
-        <a class="footer-link" href="#">Сontact US</a>
-      </div>
-    </div>
       <div class="down">
         <div class="down1">
           <a href="#">Terms&Conditions</a>
           <a href="#">Privacy Policy</a>
         </div>
         <div class="down2">
-        <img src="./svg/Social.svg" />
-      </div>
+          <img src="./svg/Social.svg" />
         </div>
+      </div>
     </footer>
   </body>
 </html>
