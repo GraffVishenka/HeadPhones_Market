@@ -38,7 +38,7 @@ body {
   padding: 0 85px;
 }
 
-.logo__title {
+.logo {
   display: inline-block;
   color: var(--primary);
   font-size: 40px;
@@ -48,7 +48,7 @@ body {
   margin-right: auto;
 }
 
-.logo__title > span {
+.logo > span {
   color: black;
 }
 
@@ -102,10 +102,6 @@ body {
   align-items: center;
   transition: all 0.3s ease-out;
 }
-.basket:hover {
-  border: 1px solid var(--primary-hover);
-  background-color: var(--primary-hover);
-}
 .basket:hover .basket__text {
   color: #fff;
 }
@@ -133,10 +129,6 @@ body {
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease-out;
-}
-.login:hover {
-  border: 1px solid var(--primary-hover);
-  background-color: var(--primary-hover);
 }
 
 .login > img {
@@ -166,6 +158,10 @@ body {
   background-color: transparent;
   color: #fff;
   text-decoration: none;
+}
+
+.links .link a:hover{
+  color: black;
 }
 
 /* About */
@@ -787,9 +783,22 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+
 .row-2__col-2 .footer__link:first-child,
 .row-2__col-3 .footer__link:first-child,
 .row-2__col-4 .footer__link:first-child {
+  color: var(--primary);
+}
+
+.row-2__col-2 .footer__link:first-child:hover,
+.row-2__col-3 .footer__link:first-child:hover,
+.row-2__col-4 .footer__link:first-child:hover {
+  color: var(--textprimarycolor);
+}
+
+.row-2__col-2 .footer__link:hover,
+.row-2__col-3 .footer__link:hover,
+.row-2__col-4 .footer__link:hover {
   color: var(--primary);
 }
 
@@ -799,6 +808,12 @@ body {
   gap: 39px;
   margin-top: 72px;
 }
+
+.row-3 > p:hover{
+  cursor: pointer;
+  color: var(--primary);
+}
+
 .row-3__conditions {
   font-size: 15px;
   line-height: 20px;
