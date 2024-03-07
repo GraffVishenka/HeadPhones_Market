@@ -196,9 +196,55 @@ button:hover {
   background-color: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   width: 100%;
   background-color: #f5f5f5;
+}
+
+.mobile-menu {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 200px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 160px;
+  background-color: #f5f5f5;
+  z-index: 10;
+  transition: all 3s ease-out;
+  display: none;
+}
+
+.mobile-menu__links {
+  color: #10b981;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 40px;
+  list-style: none;
+}
+
+.mobile-menu__close {
+  border: none;
+  background: none;
+  font-size: 50px;
+  color: #10b981;
+  position: absolute;
+  cursor: pointer;
+  right: 70px;
+  top: 50px;
+  border-radius: 10px;
+  width: 50px;
 }
 
 .header {
@@ -229,6 +275,23 @@ body {
 }
 .logo > span {
   color: black;
+}
+
+hr {
+  border-color: black;
+  opacity: 0.7;
+}
+
+.menu_button {
+  border: none;
+  border-radius: 10px;
+  background: none;
+  width: 45px;
+  height: 45px;
+  display: none;
+}
+.menu_button__img {
+  width: 40px;
 }
 
 .search__input {
@@ -937,8 +1000,26 @@ body {
 }
 
 @media (max-width: 1140px) {
+  .navbar_header > .links {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+  .basket {
+    display: none;
+  }
   .search__input {
     width: 218px;
+  }
+  .controls > .search__input__label {
+    display: none;
+  }
+  .controls {
+    align-items: center;
+  }
+  .menu_button {
+    display: block;
   }
   .about {
     display: flex;
@@ -961,6 +1042,9 @@ body {
   }
 }
 @media (max-width: 968px) {
+  .controls > .search__input__label {
+    display: none;
+  }
   .about {
     margin-left: 45px;
   }
@@ -1030,9 +1114,12 @@ body {
   }
 }
 @media (max-width: 568px) {
+  /* .mobile-menu {
+    display: flex;
+  } */
   .controls {
-    flex-direction: column;
     padding: 0 30px;
+    align-items: center;
   }
   .search__input {
     width: 100%;
@@ -1087,4 +1174,11 @@ body {
   .links {
     gap: 25px;
   }
+}
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

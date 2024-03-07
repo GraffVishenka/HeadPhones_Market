@@ -29,15 +29,38 @@
     <title>Shopper</title>
   </head>
   <body>
+    <!-- mobile menu -->
+    <section class="mobile-menu">
+      <button class="mobile-menu__close">X</button>
+      <label class="search__input__label">
+        <button class="search__input__btn">
+          <img src="./assets/search.svg" alt="search" />
+        </button>
+        <input
+          name="search"
+          class="search__input"
+          type="text"
+          placeholder="Search Items"
+        />
+      </label>
+      <ul class="mobile-menu__links">
+        <li class="link"><a href="#products">Features</a></li>
+        <li class="link"><a href="#products">Products</a></li>
+        <li class="link"><a href="#earphones">Blog</a></li>
+        <li class="link"><a href="#launches">About</a></li>
+      </ul>
+    </section>
 
     <!--  Header  -->
     <section class="header">
       <div class="container">
-
         <!--  NavBar  -->
         <nav class="navbar navbar_header">
           <div class="controls">
             <h3 class="logo">Shop<span>per</span></h3>
+            <button class="menu_button">
+              <img class="menu_button__img" src="assets/menu-svgrepo-com.svg">
+            </button>
             <label class="search__input__label">
               <button class="search__input__btn">
                 <img src="./assets/search.svg" alt="search" />
@@ -137,17 +160,24 @@
                 alt="headphones"
               />
               <p class="headphones__text">$50</p>
-              <img class="star star__first" src="./assets/star.svg" alt="star" />
-              <img class="star star__second" src="./assets/star.svg" alt="star" />
+              <img
+                class="star star__first"
+                src="./assets/star.svg"
+                alt="star"
+              />
+              <img
+                class="star star__second"
+                src="./assets/star.svg"
+                alt="star"
+              />
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
     <!-- Products -->
-    <section class="products">
+    <section class="products" id="products">
       <!-- Left block -->
       <div class="images">
         <h2 class="images__title">Apple wireless Airpod</h2>
@@ -190,7 +220,7 @@
     </section>
 
     <!-- Sellers -->
-    <section class="sellers">
+    <section class="sellers" id="sellers">
       <h2 class="sellers__title sellers__title-margin-bt">Top Sellers</h2>
       <div class="tab container">
         <div class="tab__btn-wrapper">
@@ -278,7 +308,7 @@
     </section>
 
     <!-- Earphones -->
-    <section class="earphones">
+    <section class="earphones" id="earphones">
       <h2 class="sellers__title sellers__title-margin-bt">
         Trending Earphones
       </h2>
@@ -369,7 +399,7 @@
     </section>
 
     <!-- Launches -->
-    <section class="launches test">
+    <section class="launches test" id="launches">
       <h2 class="launches__title launches__title-margin-bt test">
         New Launches
       </h2>
@@ -510,6 +540,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="index.js"></script>
   </body>
 </html>

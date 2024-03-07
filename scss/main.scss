@@ -17,10 +17,55 @@ $font-second: "Montserrat-light", sans-serif;
   font-family: $font-first;
   background-color: none;
 }
+
+a{
+  text-decoration: none;
+}
+
 body {
   width: 100%;
   background-color: $primary-bg;
 }
+.mobile-menu {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 200px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 160px;
+  background-color: $primary-bg;
+  z-index: 10;
+  transition: all 3s ease-out;
+  display: none;
+}
+.mobile-menu__links {
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 40px;
+  list-style: none;
+}
+.mobile-menu__close {
+  border: none;
+  background: none;
+  font-size: 50px;
+  color: $primary-color;
+  position: absolute;
+  cursor: pointer;
+  right: 70px;
+  top: 50px;
+  border-radius: 10px;
+  width: 50px;
+}
+
 .header {
   min-height: 888px;
   margin-top: 56px;
@@ -47,6 +92,22 @@ body {
     color: black;
   }
 }
+hr {
+  border-color: black;
+  opacity: 0.7;
+}
+.menu_button {
+  border: none;
+  border-radius: 10px;
+  background: none;
+  width: 45px;
+  height: 45px;
+  display: none;
+  &__img{
+    width: 40px;
+  }
+}
+
 .search__input {
   width: 322px;
   height: 63px;
@@ -732,8 +793,26 @@ body {
 }
 
 @media (max-width: 1140px) {
+  .navbar_header > .links {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+  .basket {
+    display: none;
+  }
   .search__input {
     width: 218px;
+  }
+  .controls > .search__input__label {
+    display: none;
+  }
+  .controls {
+    align-items: center;
+  }
+  .menu_button {
+    display: block;
   }
 
   .about {
@@ -757,6 +836,9 @@ body {
   }
 }
 @media (max-width: 968px) {
+  .controls > .search__input__label {
+    display: none;
+  }
   .about {
     margin-left: 45px;
     &__descr {
@@ -842,9 +924,12 @@ body {
   }
 }
 @media (max-width: 568px) {
+  /* .mobile-menu {
+    display: flex;
+  } */
   .controls {
-    flex-direction: column;
     padding: 0 30px;
+    align-items: center;
   }
 
   .search__input {
@@ -912,4 +997,12 @@ body {
   .links {
     gap: 25px;
   }
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
 }
