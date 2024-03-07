@@ -221,8 +221,7 @@ body {
   padding-top: 160px;
   background-color: #f5f5f5;
   z-index: 10;
-  transition: all 3s ease-out;
-  display: none;
+  transition: all 1s ease-out;
 }
 
 .mobile-menu__links {
@@ -1114,9 +1113,6 @@ hr {
   }
 }
 @media (max-width: 568px) {
-  /* .mobile-menu {
-    display: flex;
-  } */
   .controls {
     padding: 0 30px;
     align-items: center;
@@ -1176,9 +1172,9 @@ hr {
   }
 }
 .hidden {
-  display: none;
+  transform: translateY(-100%);
 }
 
 .visible {
-  display: flex;
+  transform: translateY(0%);
 }/*# sourceMappingURL=main.css.map */
